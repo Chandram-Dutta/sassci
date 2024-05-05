@@ -8,11 +8,13 @@ let package = Package(
     dependencies: [
         .package(url: "https://github.com/apple/swift-argument-parser", from: "1.3.1"),
         .package(url: "https://github.com/koher/swift-image.git", from: "0.7.1"),
+        .package(url: "https://github.com/onevcat/Rainbow", .upToNextMajor(from: "4.0.0"))
     ],
     targets: [
         .executableTarget(name: "Sassci", dependencies: [
             .product(name: "ArgumentParser", package: "swift-argument-parser"),
             .product(name: "SwiftImage", package: "swift-image"),
+            .product(name: "Rainbow", package: "Rainbow")
         ]),
     ]
 )
