@@ -1,0 +1,28 @@
+{
+    "configurations": [
+        {
+            "type": "lldb",
+            "request": "launch",
+            "sourceLanguages": [
+                "swift"
+            ],
+            "args": [],
+            "cwd": "${workspaceFolder:sassci}",
+            "name": "Debug Sassci",
+            "program": "${workspaceFolder:sassci}/.build/debug/Sassci",
+            "preLaunchTask": "swift: Build Debug Sassci"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "sourceLanguages": [
+                "swift"
+            ],
+            "args": [],
+            "cwd": "${workspaceFolder:sassci}",
+            "name": "Release Sassci",
+            "program": "${workspaceFolder:sassci}/.build/release/Sassci",
+            "preLaunchTask": "swift: Build Release Sassci"
+        }
+    ]
+}
